@@ -9,7 +9,7 @@ body {
 
 .parallax-container {
     position: relative;
-    height: 100vh; /* Full viewport height for the parallax section */
+    height: 900px; /* Full viewport height for the parallax section, Initially: 10vh*/
     overflow: hidden; /* Hide any overflowing images */
     padding-bottom: 150px; /* Space for text */
 }
@@ -177,11 +177,12 @@ h6 {
 p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 18px; /* Initially: 1.2rem*/
     line-height: 1.5;
     margin-left: 100px;
     margin-right: 100px;
     text-align: center;
+    white-space: nowrap;
 }
 
 footer {
@@ -290,14 +291,14 @@ footer p {
 }
 
 .management-info h3 {
-  font-size: 1.4rem;
+  font-size: 22px; /* Initially: 1.4rem*/
   color: #FFD700;
   margin: 10px 0 5px;
   font-family: 'Montserrat', sans-serif;
 }
 
 .management-info h4 {
-  font-size: 1.1rem;
+  font-size: 17px; /* Initially: 1.1rem*/
   font-weight: 400;
   color: #ccc;
   margin-bottom: 5px;
@@ -306,7 +307,7 @@ footer p {
 }
 
 .management-info p {
-  font-size: 0.8rem;
+  font-size: 14px; /* Initially: 0.8rem*/
   color: #aaa;
   /*margin: 15px 5px 15px 5px;*/
   margin-top: 15px;
@@ -325,7 +326,7 @@ footer p {
 
 .social-links a {
   color: #FFD700;
-  font-size: 1.2rem;
+  font-size: 18px; /* Initially: 1.2rem*/
   transition: color 0.3s;
 }
 
@@ -354,12 +355,12 @@ footer p {
   border: none;
   cursor: pointer;
   align-items: center;
-  gap: 0.75rem;
+  gap: 12px; /* Initially: 0.75rem*/
   background-color: var(--clr);
   color: #fff;
-  border-radius: 10rem;
+  border-radius: 160px; /* Initially: 10rem*/
   font-weight: 600;
-  padding: 0.75rem 1.5rem;
+  padding: 12px 24px; /* Initially: 0.75rem 1.5rem*/
   padding-left: 20px;
   white-space: nowrap;
   overflow: hidden;
@@ -433,6 +434,40 @@ footer p {
   font-weight: 700;
   color: #ffffff;
   line-height: 1;
+}
+
+/*Regulations table*/
+
+.regulations-table {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.regulations-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px; /* vertical spacing */
+}
+
+.regulations-label {
+  width: 400px; /* fixed width for all labels */
+  white-space: nowrap;
+  text-align: left;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.2;
+  margin-left: 0px; /* Adjusted for alignment */
+}
+
+.regulations-content {
+  flex: 1;
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.5;
 }
 
 /* Regulations punishment section */
@@ -518,10 +553,45 @@ footer p {
   border-radius: 50%;
   text-align: left;
   line-height: 1.2;
-  margin-left: -50px; /* Adjusted for alignment */
+  margin-left: 0px; /* Adjusted for alignment */
 }
 
 .aviation-content {
+  flex: 1;
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+/* Information designation section */
+
+.designation-table {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.designation-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px; /* vertical spacing */
+}
+
+.designation-label {
+  width: 400px; /* fixed width for all labels */
+  white-space: nowrap;
+  text-align: left;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 50%;
+  text-align: right;
+  padding-right: 50px; /* Added padding for better alignment */
+  line-height: 1.2;
+  margin-left: 0px; /* Adjusted for alignment */
+}
+
+.designation-content {
   flex: 1;
   font-size: 20px;
   text-align: left;
@@ -553,7 +623,7 @@ footer p {
   border-radius: 50%;
   text-align: left;
   line-height: 1.5;
-  margin-left: -50px; /* Adjusted for alignment */
+  margin-left: 0px; /* Adjusted for alignment */
 }
 
 .atc-content {

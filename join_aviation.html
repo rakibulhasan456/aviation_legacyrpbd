@@ -21,7 +21,7 @@
 <body style="font-family: Montserrat, sans-serif;">
     <nav class="navbar navbar-expand-lg bg-dark-subtle py-3" data-bs-theme="dark">
         <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="index.html"><img src="assets/img/lsa_logo.webp" width="50" height="50" /><span class="navbar-brand-name">Los Santos Aviation</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-5">
+            <div class="collapse navbar-collapse text-center" id="navcol-5">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="management.html">Management</a></li>
@@ -35,7 +35,8 @@
     </nav>
     <section class="overflow-hidden" id="management">
         <h1 class="fw-bold text-center pt-4" id="management-heading">JOIN LOS SANTOS AVIATION</h1>
-        <p class="text-center ps-4 pe-4 pt-2 mb-6 pb-0" id="management-paragraph">Join Los Santos Aviation and take flight with us!<br>Train with certified instructors, earn your pilot's license, and become part of the amazing Los Santos Aviation community.</p><!DOCTYPE html>
+        <p class="text-center ps-4 pe-4 pt-2 mb-6 pb-0" id="management-paragraph">Join Los Santos Aviation and take flight with us!<br>Train with certified instructors, earn your pilot's license, and become part of the amazing Los Santos Aviation community.</p>
+        <p class="fs-3 fw-bold text-center text-success ps-4 pe-4 pt-2 mb-4 pb-0" id="form-open">Aviation Pilot Form is OPEN</p><!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -84,11 +85,6 @@
       background: #00e676;
     }
 
-    #responseMessage {
-      margin-top: 1rem;
-      font-weight: bold;
-    }
-
     .form-overlay {
       position: absolute;
       top: 0;
@@ -106,6 +102,22 @@
       z-index: 10;
       text-align: center;
       padding: 1rem;
+    }
+
+    #customForm {
+      transition: opacity 0.5s ease;
+    }
+
+    #responseMessage {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background-color: #1b1b1b;
+      border: 2px solid #00e676;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      color: #00e676;
+      text-align: center;
+      display: none;
     }
   </style>
 </head>
@@ -143,12 +155,13 @@
       </select>
 
       <button type="submit">Submit</button>
-      <p id="responseMessage"></p>
     </form>
+
+    <p id="responseMessage"></p>
   </div>
 
   <script>
-    // Replace this with your Apps Script Web App URL
+    // Replace with your Apps Script URL for status checking
     const statusURL = "https://script.google.com/macros/s/AKfycbz8NhkqmfEn6284H6BAQNfcjmD7yfNWer-89KrRqbP1FbgrTJ_20thuttiUz6UuHm9q/exec";
 
     async function checkFormStatus() {
@@ -172,7 +185,7 @@
       }
     }
 
-    // ✅ Check only once when the page loads
+    // Check status once on page load
     checkFormStatus();
 
     document.getElementById('customForm').addEventListener('submit', function (e) {
@@ -191,8 +204,18 @@
         body: JSON.stringify(object)
       });
 
-      document.getElementById("responseMessage").innerText = "Submitted!";
-      this.reset();
+      const formElement = document.getElementById("customForm");
+      const responseMessage = document.getElementById("responseMessage");
+
+      // Show confirmation message
+      responseMessage.innerText = "✅ You have submitted the form.";
+      responseMessage.style.display = "block";
+
+      // Fade out the form and hide it
+      formElement.style.opacity = "0";
+      setTimeout(() => {
+        formElement.style.display = "none";
+      }, 500);
     });
   </script>
 </body>

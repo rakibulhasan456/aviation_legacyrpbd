@@ -15,12 +15,12 @@
     <link rel="stylesheet" href="assets/css/Single-Advisor-Profile.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
-<link rel="icon" type="image/webp" href="assets/img/lsa_logo.webp">
+<link rel="icon" type="image/webp" href="assets/img/logo_aviation.svg">
 </head>
 
 <body style="font-family: Montserrat, sans-serif;">
     <nav class="navbar navbar-expand-lg bg-dark-subtle py-3" data-bs-theme="dark">
-        <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="index.html"><img src="assets/img/lsa_logo.webp" width="50" height="50" /><span class="navbar-brand-name">Los Santos Aviation</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="index.html"><img src="assets/img/logo_aviation.svg" width="50" height="50" /><span class="navbar-brand-name">Los Santos Aviation</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse text-center" id="navcol-5">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -42,90 +42,138 @@
                     <tr>
                         <th class="fs-5 text-center">No.</th>
                         <th class="fs-5 text-center">Description</th>
+                        <th class="fs-5 text-center">Action</th>
                     </tr>
                 </thead>
                 <tbody style="vertical-align: middle;">
                     <tr>
                         <td class="fs-5 fw-bold text-center">1.1</td>
                         <td>Failed to show flying activity.</td>
+                        <td>Advisory</td>
                     </tr>
                     <tr>
                         <td class="fs-5 fw-bold text-center">1.2</td>
                         <td>Failed to show ID card while on flight activity.</td>
+                        <td>Warning</td>
                     </tr>
                     <tr>
                         <td class="fs-5 fw-bold text-center">1.3</td>
                         <td>If not wear uniform while on duty.</td>
+                        <td>Advisory</td>
                     </tr>
                     <tr>
                         <td class="fs-5 fw-bold text-center">1.4</td>
                         <td>If not on the radio while on flight.</td>
+                        <td>Warning</td>
                     </tr>
                     <tr>
                         <td class="fs-5 fw-bold text-center">1.5</td>
                         <td>Involved in criminal activities.</td>
+                        <td>Revoke</td>
                     </tr>
                     <tr>
                         <td class="fs-5 fw-bold text-center">1.6</td>
                         <td>Valid complaint from citizen/other department against pilot.</td>
+                        <td>Strike</td>
                     </tr>
                     <tr>
                         <td class="fs-5 fw-bold text-center">1.7</td>
                         <td>Recruitment corruption activities.</td>
+                        <td>Strike</td>
                     </tr>
                     <tr>
                         <td class="fs-5 fw-bold text-center">1.8</td>
                         <td>Giving aircraft keys to others except pilots/students.</td>
+                        <td>Revoke</td>
                     </tr>
                     <tr>
                         <td class="fs-5 fw-bold text-center">1.9</td>
                         <td>Disobey Instructor Pilot.</td>
+                        <td>Strike</td>
                     </tr>
                     <tr>
                         <td class="fs-5 fw-bold text-center">2.0</td>
                         <td>Take passenger flight without ticket.</td>
+                        <td>Strike</td>
                     </tr>
                     <tr>
                         <td class="fs-5 fw-bold text-center">2.1</td>
                         <td>Not following taxiway, runway waypoint and helipad.</td>
+                        <td>Strike</td>
                     </tr>
                     <tr>
                         <td class="fs-5 fw-bold text-center">2.2</td>
                         <td>Using aircraft smoke unnecessarily.</td>
+                        <td>Warning</td>
                     </tr>
                     <tr>
                         <td class="fs-5 fw-bold text-center">2.3</td>
                         <td>Perform stunt without G-Suit.</td>
+                        <td>Strike</td>
                     </tr>
                     <tr>
                         <td class="fs-5 fw-bold text-center">2.4</td>
                         <td>Fly damaged aircraft.</td>
+                        <td>Warning</td>
                     </tr>
                     <tr>
                         <td class="fs-5 fw-bold text-center">2.5</td>
                         <td>Operating aircraft without parachute.</td>
+                        <td>Warning</td>
                     </tr>
                     <tr>
                         <td class="fs-5 fw-bold text-center">2.6</td>
                         <td>Aircraft not being parked properly.</td>
+                        <td>Warning</td>
                     </tr>
                     <tr>
                         <td class="fs-5 fw-bold text-center">2.7</td>
                         <td>Continuous bad flying record.</td>
+                        <td>Strike</td>
                     </tr>
                     <tr>
                         <td class="fs-5 fw-bold text-center">2.8</td>
                         <td>Stealing others' aircraft/helicopter.</td>
+                        <td>Strike</td>
                     </tr>
                     <tr>
                         <td class="fs-5 fw-bold text-center">2.9</td>
                         <td>If the private car is not parked in the parking area.</td>
+                        <td>Advisory</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-responsive" id="rules-regulations-description">
+            <table class="table table-striped-columns">
+                <thead>
+                    <tr>
+                        <th class="fs-5 text-center">Action</th>
+                        <th class="fs-5 text-center">Description</th>
+                    </tr>
+                </thead>
+                <tbody style="vertical-align: middle;">
+                    <tr>
+                        <td class="fw-bold text-center">Advisory</td>
+                        <td>An advisory serves as a formal reminder for minor infractions or procedural oversights. It does not carry a penalty but is recorded for reference in case of repeated occurrences.</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold text-center">Warning</td>
+                        <td>A warning is issued for rule violations of moderate severity. It is an official caution and may escalate to a strike if the behavior continues.<br><br><br>Two warnings in two different scenarios will result in one strike.</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold text-center">Strike</td>
+                        <td>A strike is a serious disciplinary action applied to significant violations of aviation rules. Accumulation of multiple strikes may result in revocation of the pilot’s license.<br><br><br>Two strikes in two different scenarios will result in license revocation.</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold text-center">Revoke</td>
+                        <td>Revocation is the immediate cancellation of a pilot’s license due to severe or unacceptable misconduct. This action is taken in cases where safety, integrity, or trust has been critically compromised.</td>
                     </tr>
                 </tbody>
             </table>
         </div>
         <h1 class="fw-bold text-center pt-6 pb-0" id="punishment-suspension">Punishment &amp; Suspension</h1>
-        <p class="text-center ps-4 pe-4 pt-4 mb-6 pb-0" id="management-paragraph-1">1st strike : $5,000 fine / License suspended for 7 days<br><br>2nd strike : $10,000 fine / License suspended for 7 days</p>
+        <p class="text-center ps-4 pe-4 pt-4 mb-6 pb-0" id="management-paragraph-1">1st Revoke : $5,000 fine / License suspended for 7 days<br><br>2nd Revoke: $10,000 fine / License suspended for 14 days</p>
     </section>
     <footer class="text-center bg-dark">
         <div class="container text-white py-4 py-lg-5">
@@ -143,6 +191,7 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/database.js"></script>
     <script src="assets/js/Scroll-Animation-script.js"></script>
+    <script src="assets/js/settings.js"></script>
 </body>
 
 </html>

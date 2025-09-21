@@ -100,3 +100,17 @@
   margin: auto;
 }
 
+@media (min-width: 769px) and (max-width:1200px) {
+  #rules-regulations-penal-code {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 769px) and (max-width:1200px) {
+  #rules-regulations-penal-code {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+

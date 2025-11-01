@@ -2,9 +2,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Configuration object - change these values to control visibility
     const formSettings = {
-        showOpenMessage: true,    // Set to true to show "Aviation Pilot Form is OPEN"
-        showClosedMessage: false,   // Set to true to show "Aviation Pilot Form is CLOSED"
-        showForm: true            // Set to true to show the form section
+        showOpenMessage: false,    // Set to true to show "Aviation Pilot Form is OPEN"
+        showClosedMessage: true,   // Set to true to show "Aviation Pilot Form is CLOSED"
+        showForm: false            // Set to true to show the form section
     };
 
     // Apply the settings

@@ -27,8 +27,14 @@ span {
   border-radius: 20px;
 }
 
-@media (max-width: 359px) {
+@media (max-width: 576px) {
   .navbar-brand-name {
+    display: none;
+  }
+}
+
+@media (min-width: 577px) {
+  .navbar-brand-name-2 {
     display: none;
   }
 }
@@ -302,6 +308,12 @@ span {
   #rules-regulations-penal-code {
     padding-left: 60px;
     padding-right: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  #training-program-td {
+    padding-left: 50px!important;
   }
 }
 

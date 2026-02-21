@@ -34,7 +34,7 @@
 }
 
 .button:hover {
-  background-color: #000;
+  background-color: #0f44ff;
 }
 
 .button:hover .button__icon-wrapper {
